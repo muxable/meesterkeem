@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #32b4c6;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meesterkeem-media{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.meesterkeem-media h2{
+    color: #fbf729;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.border{
+    width: 120px;
+    height: 3px;
+    position: relative;
+}
+
+.border::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: #fbf729;
+    transition: .3s linear;
+}
+
+.meesterkeem-media:hover .border::before{
+    width: 100%;
+}
+
+.meesterkeem-media:hover .social-media-buttons a{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
